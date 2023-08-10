@@ -5,6 +5,7 @@ import MainHeadTodo from "./components/MainHeadTodo";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import WeatherApp from "./components/WeatherApp";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/expensestracker" Component={ExpensesTracker} />
           <Route exact path="/weatherapp" Component={WeatherApp} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );

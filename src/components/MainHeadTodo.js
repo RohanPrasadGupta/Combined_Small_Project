@@ -38,12 +38,12 @@ const MainHeadTodo = () => {
     <div className=" w-[70%] m-auto mt-14 bg-black/50 p-3 rounded-lg">
 
     <div className='flex mb-6 justify-center'>
-        <h1 className='font-bold text-[22px] underline underline-offset-2'>
+        <h1 className='font-bold text-[34px] underline underline-offset-2 font-serif text-white'>
         Todo APP... 
         </h1>
-        <ListIcon className='w-8 h-8 ml-4'/>
+        <ListIcon className='w-12 h-12 ml-4'/>
     </div>
-    <div className='flex justify-center mb-4'>
+    <div className='flex justify-center mb-4 w-auto'>
         <input type='text' value={text} onChange={textChange} className='border-0 p-3 rounded-2xl flex-1  ' placeholder='Enter task to add on list...'>
         </input>
         <button className='ml-2 bg-orange-500 p-3 rounded-2xl font-bold text-[15px] text-white hover:bg-green-500 cursor-pointer ' onClick={onAddBtn}> Add</button>

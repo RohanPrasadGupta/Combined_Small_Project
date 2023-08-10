@@ -8,11 +8,9 @@ const Navbar = () => {
         
         <ul className=" flex justify-between p-2">
           <li className=" border-solid border-white border-[2px] p-2 rounded-lg">
-            <Link to='/' > Home </Link>
+            <Link to='/todoapp' > TodoApp </Link>
           </li>
-          <li className=" border-solid border-white border-[2px] p-2 rounded-lg">
-            <Link to="/todoapp" >TodoApp </Link>
-          </li>
+          
           <li className=" border-solid border-white border-[2px] p-2 rounded-lg">
             <Link to="/expensestracker" > Expenses Tracker </Link>
           </li>
