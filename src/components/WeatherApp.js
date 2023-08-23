@@ -78,18 +78,18 @@ const WeatherApp = () => {
 
   return (
     <>
-      <div className=" w-[70%] m-auto mt-14 bg-black/50 p-3 rounded-lg">
+      <div className=" lg:w-[50%] w-[85%] m-auto lg:mt-6 mt-10 bg-black/50 p-3 rounded-lg">
 
-        <div className="mt-4 text-[30px] font-serif font-bold text-yellow-100 text-center">
+        <div className="mt-4 lg:text-[30px] text-[20px] font-serif font-bold text-yellow-100 text-center">
           Weather App...
         </div>
-        <div className="felx mt-8 mb-16 items-center justify-center text-center">
+        <div className="felx mt-8 lg:mb-16 mb-4 items-center justify-center text-center">
           <input
             type="text"
             value={text}
             onChange={OnTypeing}
             placeholder="Enter the loaction..."
-            className="text-[16px] h-16 p-2 rounded-full w-[80%]"
+            className="lg:text-[16px] lg:h-16 text-[12px] h-10 p-2 rounded-full w-[80%]"
           ></input>
 
           <button
@@ -105,7 +105,7 @@ const WeatherApp = () => {
             <img
               src={CloudyImg}
               alt="Cloudy"
-              className="w-[150px] m-auto h-[150px] weatherIcon"
+              className="lg:w-[150px] lg:m-auto w-[100px] m-auto h-[100px] lg:h-[150px] weatherIcon"
             ></img>
             <h2 className="text-[20px] text-white capitalize cloud"> </h2>
             <h1 className="text-[50px] text-white font-semibold temp">0°C</h1>
@@ -115,22 +115,22 @@ const WeatherApp = () => {
             </h2>
           </div>
 
-          <div className="mt-9 flex justify-between mb-10">
+          <div className="mt-9 flex justify-between lg:mb-1 mb-10">
             <div className="ml-10">
               <img
                 src={HumidityImg}
                 alt="Humidity"
-                className=" h-10 w-10"
+                className=" lg:h-10 lg:w-10 h-6 w-6"
               ></img>
-              <p className="text-white -mt-12 ml-16 humid">0%</p>
-              <p className="text-[15px] font-bold ml-12 text-white">
+              <p className="text-white lg:-mt-12 -mt-8 lg:ml-16 ml-12 humid">0%</p>
+              <p className="lg:text-[15px] text-[12px] font-bold lg:ml-12 ml-8  text-white">
                 Humidity:
               </p>
             </div>
             <div className="mr-10">
-              <img src={WindImg} alt="Wind" className="h-10 mr-24 w-10  "></img>
-              <p className="text-white ml-12 -mt-12 speed">0 km/hr</p>
-              <p className="text-white font-bold ml-10">WindSpeed:</p>
+              <img src={WindImg} alt="Wind" className="lg:h-10 lg:w-10 h-6 w-6  "></img>
+              <p className="text-white lg:-mt-12 -mt-8 lg:ml-12 ml-10 speed">0 km/hr</p>
+              <p className="text-white lg:text-[15px] text-[12px] font-bold ml-10 lg:ml-12">WindSpeed:</p>
             </div>
           </div>
         </div>

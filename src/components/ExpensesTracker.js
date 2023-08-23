@@ -78,8 +78,8 @@ const ExpensesTracker = () => {
   return (
     <>
     
-      <div className=" w-[70%] m-auto mt-14 bg-black/50 p-3 rounded-lg">
-        <div className="text-white font-mono font-bold text-3xl m-5">
+      <div className=" lg:w-[60%] w-[85%]  m-auto mt-14 bg-black/50 p-3 rounded-lg">
+        <div className="text-white font-mono font-bold lg:text-3xl text-2xl m-5">
           <h1>Expenses Tracker...</h1>
         </div>
 
@@ -88,7 +88,7 @@ const ExpensesTracker = () => {
             Balance: ${Balance}
           </h3>
           <button
-            className={` bg-blue-800 p-3 text-[17px] rounded-full font-bold border-solid border-[2px] text-white w-[80px] h-[50px] hover:${hoverChange}`}
+            className={` bg-blue-800 p-3 lg:text-[17px] text-[14px] rounded-full font-bold border-solid border-[2px] text-white lg:w-[80px] lg:h-[50px]  hover:${hoverChange}`}
             onClick={divHideShow}
           >
             {btnText}
@@ -96,7 +96,7 @@ const ExpensesTracker = () => {
         </div>
 
         <div
-          className={`flex flex-col w-[50%] ${show} items-center content-center m-auto bg-white/50 p-3 rounded-lg `}
+          className={`flex flex-col lg:w-[50%] ${show} items-center content-center m-auto bg-white/50 p-3 rounded-lg `}
         >
           <input
             className="m-4 p-2 rounded-xl w-[70%]"
