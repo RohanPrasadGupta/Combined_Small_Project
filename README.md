@@ -1,7 +1,4 @@
 <h1>A group of 3 Small Project combined..</h1>
-
-<h1> View the deployment </h1> <a href='https://rpg-merged-projects.netlify.app/'>Click Here</a>
-
 <h2>1. ToDo App</h2>
 <h2>2. Expense Tracker</h2>
 <h2>3. Weather App</h2>
