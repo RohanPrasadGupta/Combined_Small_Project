@@ -9,6 +9,7 @@ import Haze from "../images/haze.png";
 import Mist from "../images/mist.png";
 import Rain from "../images/rain.png";
 import Snow from "../images/snow.png";
+import Transitions from "./Transitions";
 
 const WeatherApp = () => {
   const [text, setText] = useState("");
@@ -78,6 +79,8 @@ const WeatherApp = () => {
 
   return (
     <>
+
+<Transitions />
       <div className=" lg:w-[50%] w-[85%] m-auto lg:mt-6 mt-10 bg-black/50 p-3 rounded-lg">
 
         <div className="mt-4 lg:text-[30px] text-[20px] font-serif font-bold text-yellow-100 text-center">

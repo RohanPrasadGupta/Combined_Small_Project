@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import PlusSign from './PlusSign';
-
+import PlusSign from "./PlusSign";
+import Transitions from "./Transitions";
 
 const ExpensesTracker = () => {
   const [show, setShow] = useState("hidden");
@@ -77,7 +77,8 @@ const ExpensesTracker = () => {
 
   return (
     <>
-    
+      <Transitions />
+
       <div className=" lg:w-[60%] w-[85%]  m-auto mt-14 bg-black/50 p-3 rounded-lg">
         <div className="text-white font-mono font-bold lg:text-3xl text-2xl m-5">
           <h1>Expenses Tracker...</h1>
@@ -128,7 +129,7 @@ const ExpensesTracker = () => {
             className="p-3 bg-black mt-5 text-[14px] rounded-full font-bold border-solid border-[2px] text-white w-[50px] h-[50px] hover:bg-green-600"
             onClick={addDataOnClick}
           >
-          <PlusSign />
+            <PlusSign />
           </button>
         </div>
 

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Image1, Image2, Image3, Image5 } from "./Icons";
+import Transitions from "./Transitions";
 
 const JokePage = () => {
   const [jokes, setJokes] = useState([]);
@@ -45,6 +46,11 @@ const JokePage = () => {
     }
 
   return (
+
+    <>
+
+   <Transitions />
+
     <div className=" lg:w-[90%] w-[95%] m-auto lg:mt-6 mt-10 bg-black/50 p-3 rounded-lg">
       <h1 className="felx m-auto text-white justify-center text-center text-[20px] underline underline-offset-4 font-bold">
         Joke Page...
@@ -75,6 +81,7 @@ const JokePage = () => {
         </div>
 
     </div>
+  </>
   );
 };
 
